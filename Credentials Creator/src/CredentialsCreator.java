@@ -43,7 +43,7 @@ public class CredentialsCreator {
 		// Choose Department
 		int departmentType = credService.chooseDepartment();
 
-		// Credential Creating using respective methods
+		// Credential Creating and getting using respective methods
 		credService.generateEmailAddress(EmpFullName, departmentType, empData.getFirstName());
 
 	}
