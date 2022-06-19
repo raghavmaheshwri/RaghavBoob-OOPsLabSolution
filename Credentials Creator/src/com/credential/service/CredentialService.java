@@ -25,25 +25,25 @@ public class CredentialService implements ICredentialService {
 
 		switch (deptType) {
 		case 1: {
-			this.setEmpMail(empFullName + "@technical.company.com");
+			setEmpMail(empFullName + "@technical.company.com");
 			generatePassword();
 			showCredentials(firstName);
 		}
 			break;
 		case 2: {
-			this.setEmpMail(empFullName + "@admin.company.com");
+			setEmpMail(empFullName + "@admin.company.com");
 			generatePassword();
 			showCredentials(firstName);
 		}
 			break;
 		case 3: {
-			this.setEmpMail(empFullName + "@Human-resource.company.com");
+			setEmpMail(empFullName + "@Human-resource.company.com");
 			generatePassword();
 			showCredentials(firstName);
 		}
 			break;
 		case 4: {
-			this.setEmpMail(empFullName + "@legal.company.com");
+			setEmpMail(empFullName + "@legal.company.com");
 			generatePassword();
 			showCredentials(firstName);
 		}
