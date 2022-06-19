@@ -4,13 +4,10 @@ import com.credential.model.Employee;
 import com.credential.service.CredentialService;
 
 public class CredentialsCreator {
+	// Scanner class Object to take input from user
 	private static final Scanner sc = new Scanner(System.in);
-
+	private static final CredentialService credService = new CredentialService();
 	public static void main(String[] args) {
-
-		// Scanner class Object to take input from user
-
-		CredentialService credService = new CredentialService();
 
 		// Employee Name Input
 		System.out.print("Please Enter Employee First Name: ");
