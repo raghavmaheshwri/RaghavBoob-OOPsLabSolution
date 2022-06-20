@@ -10,7 +10,7 @@ public class CredentialService implements ICredentialService {
 	public String generatePassword() {
 		// TODO Auto-generated method stub
 		String capitalLetter ="ABCDEFGHIJKLMNOPQ";
-		String smallcaseLetter ="ABCDEFGHIJKLMNOPQ";
+		String smallcaseLetter ="abcdefghijklmnopqrstuvwxy";
 		String numbers = "1234567890";
 		String specialChar = "!@#$%-+*";
 		String value = capitalLetter+smallcaseLetter+numbers+specialChar;
