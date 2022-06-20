@@ -21,31 +21,31 @@ public class CredentialService implements ICredentialService {
 
 	// Mail Generating Method
 	@Override
-	public void generateEmailAddress(String empFullName, int deptType, String firstName) {
+	public void generateEmailAddress(String empFullName, int deptType) {
 
 		switch (deptType) {
 		case 1: {
 			setEmpMail(empFullName + "@technical.company.com");
 			generatePassword();
-			showCredentials(firstName);
+			
 		}
 			break;
 		case 2: {
 			setEmpMail(empFullName + "@admin.company.com");
 			generatePassword();
-			showCredentials(firstName);
+			
 		}
 			break;
 		case 3: {
 			setEmpMail(empFullName + "@Human-resource.company.com");
 			generatePassword();
-			showCredentials(firstName);
+			
 		}
 			break;
 		case 4: {
 			setEmpMail(empFullName + "@legal.company.com");
 			generatePassword();
-			showCredentials(firstName);
+			
 		}
 			break;
 		default: {

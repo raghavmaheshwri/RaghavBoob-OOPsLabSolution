@@ -12,10 +12,8 @@ public class CredentialsCreator {
 		// Employee Name Input
 		System.out.print("Please Enter Employee First Name: ");
 		String firstName = sc.nextLine();
-		firstName = firstName.strip();
 		System.out.print("Please Enter Employee Last Name: ");
 		String lastName = sc.nextLine();
-		lastName = lastName.strip();
 		System.out.println("-----");
 
 
@@ -29,7 +27,8 @@ public class CredentialsCreator {
 		int departmentType = credService.chooseDepartment();
 
 		// Credential Creating and getting using respective methods
-		credService.generateEmailAddress(EmpFullName, departmentType, empData.getFirstName());
+		credService.generateEmailAddress(EmpFullName, departmentType);
+		credService.showCredentials(firstName);
 
 	}
 
